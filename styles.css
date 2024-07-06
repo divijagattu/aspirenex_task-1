@@ -1,0 +1,140 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light grey background for the entire page */
+  color: #212529; /* Dark color for text */
+}
+
+.container {
+  width: 100%;
+  max-width: 100%; /* Adjust max-width as needed */
+  padding: 20px;
+}
+
+header {
+  background-color: #343a40; /* Darker grey for header */
+  color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+}
+
+.section {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e9ecef; /* Lighter grey for sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0; /* Remove margin bottom */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark grey text for section titles */
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto; /* Center the form within the section */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da; /* Lighter border color */
+}
+
+.contact-form button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+  background-color: #343a40; /* Darker grey for footer */
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Adjustments to remove gaps between sections */
+#projects,
+#skills,
+#about,
+#contact {
+  margin-top: -20px; /* Adjust this value as needed */
+  padding-top: 20px; /* Maintain padding for top of sections */
+}

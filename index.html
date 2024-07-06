@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="section projects-section">
+        <h2 class="section-title">Projects</h2>
+        <p>Surveillance System for Medical Assistance in Campus</p>
+        <p><strong>Technologies:</strong> HTML, CSS, Django</p>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li>HyperText Markup Language (HTML)</li>
+          <li>Cascading Style Sheets (CSS)</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="about" class="section about-section">
+        <h2 class="section-title">About Me</h2>
+        <p>I am G. Divija, currently pursuing my B.Tech in Computer Science and Engineering at G. Narayanamma Institute of Technology and Science.</p>
+        <p>I am passionate about web development and enjoy creating responsive and user-friendly websites. In my free time, I like to read, explore new technologies, and engage in outdoor activities.</p>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <h2 class="section-title">Contact</h2>
+        <form id="contact-form" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 G. Divija. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Your message has been sent!');
+    });
+  </script>
+</body>
+</html>
